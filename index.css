@@ -1,0 +1,127 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Archivo Black';
+    background-color: white;
+}
+@keyframes customBounce {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* .outlined {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #20DCE9;
+} */
+
+.main-text {
+    color: #79ec81;
+}
+
+.menu-icon {
+    color: #79ec81;
+}
+
+.join-button {
+    color: black;
+    background-color: #79ec81;
+    /* border: #FE0000 1px solid; */
+}
+
+.join-button:hover {
+    color: #FE0000;
+    /* border: black 1px solid; */
+    background-color: #79ec81;
+}
+
+.nav-hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    /* background-color: #5E3BEE; */
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-hover-underline-animation:hover {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #79ec81;
+}
+
+.nav-hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.about-logos {
+    animation: customBounce 1.5s infinite;
+}
+.w-full button:hover .svgg path {
+    fill: black;
+}
+.social-icons {
+    animation: customBounce 3.5s infinite;
+    color: black;
+    margin-right:20px;
+}
+
+.partner-icon {
+    width: 100px;
+    background-color: black;
+}
+
+.banner {
+    width: 80%;
+}
+
+.pump-button {
+    color: black;
+    background-color: #79ec81;
+    border: black 1px solid;
+}
+
+.pump-button:hover {
+    color: #FE0000;
+    /* border: black 1px solid; */
+    background-color: #79ec81;
+}
+
+.js-clipboard:hover {
+    background-color: #79ec81;
+    color: black;
+}
